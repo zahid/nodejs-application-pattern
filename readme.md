@@ -1,5 +1,3 @@
-#### Description
-
 Build an API with NodeJS with a great, small framework.
 
 This is the NodeJS application pattern.
