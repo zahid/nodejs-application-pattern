@@ -1,0 +1,8 @@
+{
+    "webserver": {
+        "port": 9999
+    },
+    "api": {
+        "version": "0"
+    }
+}
