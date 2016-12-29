@@ -22,7 +22,9 @@ module.exports = function ApplicationRouter(applicationController) {
         applicationController.asyncGetApiVersion()
             .then(
                 (number) => {
-                    res.setStatus(200).send({ 'version': number });
+                    res.header('x-api-version', number)
+                        .status(200)
+                        .send();
                 },
                 (issue) => {
                     res.setStatus(422).send(issue.message);

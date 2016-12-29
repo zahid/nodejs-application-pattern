@@ -42,4 +42,6 @@ app.use((error, req, res, next) => {
 });
 
 /* Have the broker server listen on config.webserverPort */
-app.listen(config.webserver.port, () => console.log('API started') );
+app.listen(config.webserver.port, () => {
+    console.log(`API listening on port ${config.webserver.port}`)
+});
